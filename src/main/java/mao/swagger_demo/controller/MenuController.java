@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
  */
 
 
-@RestController()
+@RestController
 @RequestMapping("/menu")
 @Api(tags = "菜单控制器")
 public class MenuController
