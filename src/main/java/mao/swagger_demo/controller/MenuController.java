@@ -4,7 +4,10 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import mao.swagger_demo.entity.Menu;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Project name(项目名称)：swagger_demo
@@ -60,9 +63,9 @@ public class MenuController
                             @ApiImplicitParam(name = "pageSize", value = "每页能显示的条数", required = true, type = "Integer")
                     }
             )
-    public String findByPage(@PathVariable Integer pageNum,
-                             @PathVariable Integer pageSize)
+    public List<Menu> findByPage(@PathVariable Integer pageNum,
+                                 @PathVariable Integer pageSize)
     {
-        return "OK";
+        return null;
     }
 }
